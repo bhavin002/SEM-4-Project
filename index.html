@@ -72,7 +72,8 @@
           penetration test or an ongoing virtual CISO engagement, our team of cyber security consultants are here to
           assist.</p>
       </div>
-      <div class="row d-flex">
+      <div id="cards" class="row d-flex"></div>
+      <!-- <div class="row d-flex">
         <div class="col-md-4 mobile_card">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./images/service1.png" alt="Card image cap">
@@ -141,7 +142,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <div class="row service">
@@ -326,6 +327,35 @@
       <p class="text-muted text-center">Copyright @2023 Cyber Security Services. All Rights Reserved.</p>
     </div>
   </footer>
+  <script>
+    if(window.XMLHttpRequest){
+      xmlhttp = new XMLHttpRequest();
+    }else{
+      xmlhttp=new ActiveXObject();
+    }
+    xmlhttp.open("GET","../xml/ser.xml",false)
+    xmlhttp.send();
+    xmlDoc = xmlhttp.responseXML;
+    serviceCards = document.getElementById("cards");
+
+    for(i=0;i<xmlDoc.getElementsByTagName("ser").length;i++){
+      serviceCards.innerHTML+= cardsValue(i);
+    }
+    function cardsValue(i){
+      return `
+        <div class="col-md-4 mobile_card">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/service1.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Managed Detection and Response</h5>
+              <p class="card-text">We take the #1 breach prevention software, CrowdStrike, and couple it with 100% U.S.
+                threat hunting and response services 24x7x365</p>
+              <a href="./pages/services.html"><button class="btn start">Read More</button></a>
+            </div>
+          </div>
+        </div>`
+    }
+  </script>
 </body>
 
 </html>
