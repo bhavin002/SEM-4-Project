@@ -1,0 +1,95 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ancor{
+    font-size: 18px;
+}
+.main_hading{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+.service{
+    background-color: #f5f8ff;
+}
+.lead{
+    color: #977e83;
+}
+.btn{
+    color: #f00e36;
+    border: 2px solid #f00e36;
+    border-radius: 1.3rem;
+    background-color: white;
+    font-weight: 500;
+    padding: 10px 20px 10px 20px;
+    
+}
+.contant {
+    position: absolute;
+    top: 15%;
+    right: 46%;
+}
+
+header{
+    background-color: rgb(22,27,35);
+}
+
+.start{
+    background-color: #f00e36;
+    color: white;
+    border: 2px solid rgb(231, 163, 163);
+}
+.start:hover{
+    color: black;
+    transition: all .3s ease-in-out;
+}
+.bg3{
+    width: 100%;
+}
+
+.toggleBtn{
+    font-size: 35px;
+    color: white;
+}
+
+.footer-li{
+    text-decoration: none;
+    list-style: none;
+}
+.footer-a{
+    color: black;
+    font-size: 20px;
+    line-height: 3rem;
+}
+.footer-a:hover{
+    text-decoration: none;
+    color: #f00e36;
+    transition: all .3s ease-in-out;
+}
+footer{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+
+@media (max-width:450px) {
+    .bg3{
+        width: 99.8%;
+    }
+    .contant {
+        position: absolute;
+        top: 30%;
+        right: 30%;
+    }
+    .mobile_none{
+        display: none;
+    }
+    .lead {
+        font-size: 16px;
+    }
+    .main_hading {
+        font-size: 30px;
+    }
+}
+
