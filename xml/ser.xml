@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <services>
   <ser>
-    <!-- <image url="../images/" /> -->
-    <image>service1.png</image>
+    <image>/images/service1.png</image>
     <title>Managed Detection and Response</title>
     <desc>we take the #1 breach prevention software, CrowdStrike, and couple it with 100% U.S. threat hunting and response services 24x7x365</desc>
   </ser>
   <ser>
-    <image url="../images/service2.png" />
+    <image>/images/service2.png</image>
     <title>Virtual CISO</title>
     <desc>We can act as your Virtual Chief Information Security Officer (vCISO), bringing specialized cyber security expertise to your organization</desc>
   </ser>
   <ser>
-    <image url="../images/service3.png" />
+    <image>/images/service3.png</image>
     <title>penetration Testinge</title>
     <desc>Our penetration testing team can identify cybersecurity vulnerabilities before an intruder has the opportunity to infiltrate your network or computer system.</desc>
   </ser>
   <ser>
-    <image url="../images/service4.png" />
+    <image>/images/service4.png</image>
     <title>Cyber Security Consulting</title>
     <desc>Our Cyber Security Consulting back your organization with years of experience working on projects for some of the world’s largest organizations.</desc>
   </ser>
   <ser>
-    <image url="../images/service5.png" />
+    <image>/images/service5.png</image>
     <title>Forescout Services</title>
     <desc>Our team of security experts and Forescout Certified Engineers (FSCEs) will help you get the most out of your Forescout implementation.</desc>
   </ser>
   <ser>
-    <image url="../images/service6.png" />
+    <image>/images/service6.png</image>
     <title>Emergency Incident Response</title>
     <desc>Our approach to incident response focuses on remediating the security threat in the environment as the primary objective.</desc>
   </ser>

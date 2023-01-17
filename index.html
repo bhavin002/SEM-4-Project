@@ -273,18 +273,31 @@
     }
     function cardsValue(i){
       return `
-        <div class="col-md-4 mobile_card">
+        <div class="col-md-4 mobile_card mt-3">
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./images/service1.png" alt="Card image cap">
+            <img class="card-img-top" src="${xmlDoc.getElementsByTagName('image')[i].childNodes[0].nodeValue}" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Managed Detection and Response</h5>
-              <p class="card-text">We take the #1 breach prevention software, CrowdStrike, and couple it with 100% U.S.
-                threat hunting and response services 24x7x365</p>
+              <h5 class="card-title">${xmlDoc.getElementsByTagName('title')[i].childNodes[0].nodeValue}</h5>
+              <p class="card-text">${xmlDoc.getElementsByTagName('desc')[i].childNodes[0].nodeValue}</p>
               <a href="./pages/services.html"><button class="btn start">Read More</button></a>
             </div>
           </div>
         </div>`
     }
+
+    //data ave che pan badha call nathi thata sarkha
+    //console ma batav mane badha data
+    //etle content ek nu ek j che ne ?
+    //tu pela load karavto em ave che k nai?
+    // na data load thay jay 6 card pan tema img title desc badhu dynamic aave ola stym nu batavu jo
+    //ready ?
+    // ready ho
+    👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍 😆😆😆😆😆😆😆😆😆😆😆😆😆
+    //aa kyu extensuion che
+    /byy
+    //byyyy
+    <!-- na alg che -->
+
   </script>
 </body>
 
