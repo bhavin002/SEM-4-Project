@@ -48,19 +48,19 @@ function NavVaules() {
               <a class="nav-link text-light ancor  mx-md-4" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light ancor mx-md-4" href="../pages/services.html">Service</a>
+              <a class="nav-link text-light ancor mx-md-4" href="../services.html">Service</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link text-light ancor mx-md-4" href="../pages/industries.html">Industries</a>
+              <a class="nav-link text-light ancor mx-md-4" href="../industries.html">Industries</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link text-light ancor mx-md-4" href="../pages/about.html">About Us</a>
+              <a class="nav-link text-light ancor mx-md-4" href="../about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light ancor mx-md-4" href="../pages/contact.html">Contact</a>
+              <a class="nav-link text-light ancor mx-md-4" href="../contact.html">Contact</a>
             </li>
           </ul>
-          <a href="./contact.html" class="mobile_none  ml-md-5"><button class="btn start">Talk With Our CyberSecurity Experts</button></a>
+          <a href="../contact.html" class="mobile_none  ml-md-5"><button class="btn start">Talk With Our CyberSecurity Experts</button></a>
         </div>
       </nav>
     </div>`
@@ -76,16 +76,16 @@ function fooValues() {
   <div class="col-md-3 py-md-5">
     <h2 class="text-dark" style="font-weight:bolder">Useful Links</h2>
     <li class="footer-li">
-      <a href="../pages/about.html" class="footer-a">↗️ About Us</a>
+      <a href="../about.html" class="footer-a">↗️ About Us</a>
     </li>
     <li class="footer-li">
-      <a href="../pages/services.html" class="footer-a">↗️ Services</a>
+      <a href="../services.html" class="footer-a">↗️ Services</a>
     </li>
     <li class="footer-li">
-      <a href="../pages/industries.html" class="footer-a">↗️ Industries</a>
+      <a href="../industries.html" class="footer-a">↗️ Industries</a>
     </li>
     <li class="footer-li">
-      <a href="../pages/contact.html" class="footer-a">↗️ Contact Us</a>
+      <a href="../contact.html" class="footer-a">↗️ Contact Us</a>
     </li>
   </div>
   <div class="col-md-5 py-md-5">
