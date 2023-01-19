@@ -1,3 +1,12 @@
+$(document).ready(function () {
+
+    NavBar = document.getElementById("navBars");
+    NavBar.innerHTML = NavVaules();
+
+    Footer = document.getElementById("footers");
+    Footer.innerHTML = fooValues();
+})
+
 if (window.XMLHttpRequest) {
     xmlhttp = new XMLHttpRequest();
 } else {
@@ -8,13 +17,6 @@ xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
 
 serviceCards = document.getElementById("cards");
-
-
-NavBar = document.getElementById("navBars");
-NavBar.innerHTML = NavVaules();
-
-Footer = document.getElementById("footers");
-Footer.innerHTML = fooValues();
 
 for (i = 0; i < xmlDoc.getElementsByTagName("ser").length; i++) {
     serviceCards.innerHTML += cardsValue(i);
@@ -33,7 +35,7 @@ function cardsValue(i) {
       </div>`
 }
 
-function NavVaules() {
+function NavVaules() { // aa call kya thay che?
     return `
       <div class="col-md-12">
       <nav class="navbar navbar-expand-lg">
@@ -64,6 +66,9 @@ function NavVaules() {
         </div>
       </nav>
     </div>`
+
+    // kai khabar nathi padati ka ela su che 😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆
+    //shanti rakh
 }
 
 function fooValues() {
@@ -98,21 +103,21 @@ function fooValues() {
   </div>`
 }
 
-$(document).ready(()=>{
-    $.getJSON("ind.json",(res)=>{
-      for(var i=0;i<res.length;i++){
-        let img = res[i].image;
-        let tit = res[i].title;
-        let des = res[i].desc;
-        $("#indcard").append('<div class="col-md-3 mobile_card">' + 
-          '<div class="card mx-md-2 mobile_card" style="width: 18rem;">' +
-            '<img class="card-img-top card_image" src="'+ img +'" alt="Card image cap">' +
-            '<div class="card-body">' +
-              '<h5 class="card-title text-center">"'+ tit +'"</h5>' +
-              '<p class="card-text text-center">"'+ des +'"</p>' +
-            '</div>' +
-          '</div>' +
-        '</div>')
-      }
+$(document).ready(() => {
+    $.getJSON("ind.json", (res) => {
+        for (var i = 0; i < res.length; i++) {
+            let img = res[i].image;
+            let tit = res[i].title;
+            let des = res[i].desc;
+            $("#indcard").append('<div class="col-md-3 mobile_card">' +
+                '<div class="card mx-md-2 mobile_card" style="width: 18rem;">' +
+                '<img class="card-img-top card_image" src="' + img + '" alt="Card image cap">' +
+                '<div class="card-body">' +
+                '<h5 class="card-title text-center">"' + tit + '"</h5>' +
+                '<p class="card-text text-center">"' + des + '"</p>' +
+                '</div>' +
+                '</div>' +
+                '</div>')
+        }
     })
-  })
+})
