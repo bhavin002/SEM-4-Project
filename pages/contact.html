@@ -134,22 +134,22 @@
         </div>
     </footer>
 
-    <script src="../xmlHttp/navbar.js"></script>
-    <script src="../xmlHttp/footer.js"></script>
-    <script>
+    <script src="../dataloading.js"></script>
+
+    <!-- <script>
         $(document).ready(() => {
             let fname = $("#fname").val;
             let lname = $("#lname").val;
             let email = $("#email").val;
             let cname = $("#cname").val;
             $("#submitBtn").click(() => {
-                if (!fname || !fname.length > 3) {
-                        $("#fnameError").css("display","block")
+                if (!fname || !fname.length < 3) {
+                        $("#fnameError").css("display","block");
                 }
             })
         })
-    </script>
+    </script> -->
 
 </body>
-
 </html>
+<!-- //ek minute data load vali file batav -->
