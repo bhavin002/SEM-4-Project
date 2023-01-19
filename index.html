@@ -7,49 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyber Security</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
+
+  <!-- header call by using xmlHttp Method in All Pages -->
+
   <header>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="./images/menu.png" alt="menu" class="text-light">
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul class="navbar-nav ">
-                <li class="nav-item">
-                  <a class="nav-link text-light ancor  mx-md-4" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light ancor mx-md-4" href="./pages/services.html">Service</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link text-light ancor mx-md-4" href="./pages/industries.html">Industries</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link text-light ancor mx-md-4" href="./pages/about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light ancor mx-md-4" href="./pages/contact.html">Contact</a>
-                </li>
-              </ul>
-              <a href="../pages/contact.html" class="mobile_none  ml-md-5"><button class="btn start">Talk to a Cybersecurity
-                  Expert</button></a>
-            </div>
-          </nav>
-        </div>
-      </div>
+      <div class="row" id="navBars"></div>
     </div>
   </header>
+
+
   <div class="row service">
     <div class="col-md-12">
       <img src="./images/bg.png" alt="bg" class="bg" width="100%" height="95%">
@@ -63,6 +37,9 @@
       </div>
     </div>
   </div>
+  
+  <!-- All Services Cards Is Call From Xml File Using XmlHttp Method -->
+
   <section class="service py-md-5">
     <div class="container">
       <div class="section-title">
@@ -75,6 +52,9 @@
       <div id="cards" class="row d-flex"></div>
     </div>
   </section>
+
+
+
   <div class="row service">
     <div class="col-md-12">
       <img src="./images/bg2.png" alt="bg" class="bg2" width="100%" height="400rem">
@@ -93,59 +73,19 @@
       </div>
     </div>
   </div>
+  
+  <!-- All Industries Cards is call from JSON file using getJSON Method of Jquery-->
+
   <div class="service p-md-5">
     <div class="container-fluid">
       <div class="section-title">
         <h2 class="main_hading text-dark">Services by Industry</h2>
       </div>
-      <div class="row">
-        <div class="col-md-3 mobile_card">
-          <div class="card mx-md-2 mobile_card" style="width: 18rem;">
-            <img class="card-img-top card_image" src="./images/ind1.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-center">HealthCare</h5>
-              <p class="card-text text-center">Medical device security is a critical component within information
-                assurance programs at hospitals worldwide. We work with facilities to ensure HITECH/HIPAA security
-                programs meet the challenges industry.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mobile_card">
-          <div class="card mx-md-2 mobile_card" style="width: 18rem;">
-            <img class="card-img-top card_image" src="./images/ind2.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-center">Higher Education</h5>
-              <p class="card-text text-center">We work in tandem with higher education facilities to meet their
-                cybersecurity management and policy challenges, ensuring clients remain in compliance with privacy
-                regulations including FERPA, FACTA, GLBA, and HIPAA.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mobile_card">
-          <div class="card mx-md-2 mobile_card" style="width: 18rem;">
-            <img class="card-img-top card_image" src="./images/ind3.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-center">Banking</h5>
-              <p class="card-text text-center">We’re trusted by leading financial institutions that are required to meet
-                FFIEC guidelines for information assurance and cybersecurity management, offering everything from
-                penetration testing.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mobile_card">
-          <div class="card mx-md-2 mobile_card" style="width: 18rem;">
-            <img class="card-img-top card_image" src="./images/ind4.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-center">Software</h5>
-              <p class="card-text text-center">We provide cyber security services to protect Software as a Service
-                (SaaS) solutions, safeguarding shared-service organizations from ongoing threats while elevating
-                confidence for customers relying on those vendors to protect their data.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row" id="indcard"></div>
     </div>
   </div>
+
+
   <div class="service">
     <div class=" container section-title py-md-4">
       <h2 class="text-dark main_hading py-3" style="font-weight:bolder;">We can provide just the
@@ -221,71 +161,23 @@
       <a href="./pages/contact.html"><button class="btn start mb-5 mb-md-0">GET STARTED NOW</button></a>
     </div>
   </div>
+  
+  <!-- footer call by using xmlHttp Method in All Pages -->
+
   <footer style="background-color: #f5feff;" class="pt-md-5 pb-3 mt-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 py-md-5" style="line-height: 2.5rem;">
-          <h2 class="text-dark pt-5 pt-md-0" style="font-weight:bolder">Cyber Security Services</h2>
-          <p class="lead">A leading provider of cybersecurity services and solutions for distribution and technology
-            partners around the United States.</p>
-        </div>
-        <div class="col-md-3 py-md-5">
-          <h2 class="text-dark" style="font-weight:bolder">Useful Links</h2>
-          <li class="footer-li">
-            <a href="./pages/about.html" class="footer-a">↗️ About Us</a>
-          </li>
-          <li class="footer-li">
-            <a href="./pages/services.html" class="footer-a">↗️ Services</a>
-          </li>
-          <li class="footer-li">
-            <a href="./pages/industries.html" class="footer-a">↗️ Industries</a>
-          </li>
-          <li class="footer-li">
-            <a href="./pages/contact.html" class="footer-a">↗️ Contact Us</a>
-          </li>
-        </div>
-        <div class="col-md-5 py-md-5">
-          <h2 style="font-weight:bolder" class="py-3">Contact Us</h2>
-          <p class="lead">Address : <span style="color: rgb(81, 79, 79);">752 N. State Street #172, Westerville, Ohio,
-              43082, US</span></p>
-          <p class="lead">Email : <span style="color: rgb(81, 79, 79);">sales@cybersecurity.com</span></p>
-          <p class="lead">Phone : <span style="color: rgb(81, 79, 79);">+1-800-390-1053</span></p>
-          <p class="lead">Business hours : <span style="color: rgb(81, 79, 79);">24 Hours / 7 Days</span></p>
-        </div>
+      <div class="row" id="footers">
       </div>
       <hr>
       <p class="text-muted text-center">Copyright @2023 Cyber Security Services. All Rights Reserved.</p>
     </div>
   </footer>
-  <script>
-    if(window.XMLHttpRequest){
-      xmlhttp = new XMLHttpRequest();
-    }else{
-      xmlhttp=new ActiveXObject();
-    }
-    xmlhttp.open("GET","../xml/ser.xml",false)
-    xmlhttp.send();
-    xmlDoc = xmlhttp.responseXML;
-    serviceCards = document.getElementById("cards");
 
-    for(i=0;i<xmlDoc.getElementsByTagName("ser").length;i++){
-      serviceCards.innerHTML+= cardsValue(i);
-    }
-    function cardsValue(i){
-      return `
-        <div class="col-md-4 mobile_card mt-3">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" style="height:200px"  src="${xmlDoc.getElementsByTagName('image')[i].childNodes[0].nodeValue}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">${xmlDoc.getElementsByTagName('title')[i].childNodes[0].nodeValue}</h5>
-              <p class="card-text">${xmlDoc.getElementsByTagName('desc')[i].childNodes[0].nodeValue}</p>
-              <a href="./pages/services.html"><button class="btn start">Read More</button></a>
-            </div>
-          </div>
-        </div>`
-    }
-
-  </script>
+  <script src="../xmlHttp/ser.js"></script>
+  <script src="../xmlHttp/navbar.js"></script>
+  <script src="../xmlHttp/footer.js"></script>
+  <script src="../jquery/ind.js"></script>
+  
 </body>
 
 </html>

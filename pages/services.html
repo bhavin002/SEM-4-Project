@@ -16,40 +16,7 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="./index.html"><img src="../images/logo.png" alt="logo"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <img src="../images/menu.png" alt="menu" class="text-light">
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                            <ul class="navbar-nav ">
-                                <li class="nav-item">
-                                    <a class="nav-link text-light ancor  mx-md-4" href="../index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light ancor mx-md-4" href="./services.html">Service</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link text-light ancor mx-md-4" href="./industries.html">Industries</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link text-light ancor mx-md-4" href="./about.html">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light ancor mx-md-4" href="./contact.html">Contact</a>
-                                </li>
-                            </ul>
-                            <a href="./contact.html" class="mobile_none  ml-md-5"><button class="btn start">Talk to a
-                                    Cybersecurity Expert</button></a>
-
-                        </div>
-                    </nav>
-                </div>
-            </div>
+            <div class="row" id="navBars"></div>
         </div>
     </header>
     <div class="row service">
@@ -72,7 +39,8 @@
         <div class="container-fluid">
             <div class="row p-md-5">
                 <div class="col-md-12">
-                    <p class="lead text-center my-4 my-md-0">Technology alone might have the ability to detect threats as they
+                    <p class="lead text-center my-4 my-md-0">Technology alone might have the ability to detect threats
+                        as they
                         arise—issues that can slow network response, cause downtime, or indicate a serious security
                         breach. But cybersecurity experts must then be at hand to promptly and individually analyze the
                         sheer volume of alerts received. They’ll also need to correlate incidents and determine which of
@@ -90,7 +58,8 @@
                         recommendations on modifications that organizations can implement to notably enhance security
                         and mitigate future attacks. Not only is this good business practice but it also helps
                         businesses stay in compliance with regulations like PCI, SOX, GLBA, HIPAA, FACTA, NIST 800-53,
-                        and FERPA.While larger organizations have built Managed Detection and Response into their overall security
+                        and FERPA.While larger organizations have built Managed Detection and Response into their
+                        overall security
                         strategy and framework, small- to mid-sized organizations, though equally vulnerable to
                         cyberattack, typically lack the resources to ensure around-the-clock attention. Recruitment and
                         onboarding of professionals with an advanced security skillset along with the ongoing training
@@ -144,7 +113,8 @@
                     <img src="../images/service4.png" class="img img-fluid" alt="service1">
                 </div>
                 <div class="col-md-7">
-                    <h2 class="main_hading text-dark pt-3 py-md-0">Cyber Security Consulting Services and Strategies to put you on
+                    <h2 class="main_hading text-dark pt-3 py-md-0">Cyber Security Consulting Services and Strategies to
+                        put you on
                         top.</h2>
                     <p class="lead" style="font-size: 18px;">Every business faces its own set of challenges, from
                         rules and regulations to highly sophisticated data security threats. And regardless of
@@ -221,41 +191,16 @@
     </section>
     <footer style="background-color: #f5feff;" class="pb-3">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 py-md-5" style="line-height: 2.5rem;">
-              <h2 class="text-dark pt-5 pt-md-0" style="font-weight:bolder">Cyber Security Services</h2>
-              <p class="lead">A leading provider of cybersecurity services and solutions for distribution and technology
-                partners around the United States.</p>
+            <div class="row" id="footers">
             </div>
-            <div class="col-md-3 py-md-5">
-              <h2 class="text-dark" style="font-weight:bolder">Useful Links</h2>
-              <li class="footer-li">
-                <a href="./about.html" class="footer-a">↗️ About Us</a>
-              </li>
-              <li class="footer-li">
-                <a href="./services.html" class="footer-a">↗️ Services</a>
-              </li>
-              <li class="footer-li">
-                <a href="./industries.html" class="footer-a">↗️ Industries</a>
-              </li>
-              <li class="footer-li">
-                <a href="./contact.html" class="footer-a">↗️ Contact Us</a>
-              </li>
-            </div>
-            <div class="col-md-5 py-md-5">
-              <h2 style="font-weight:bolder" class="py-3">Contact Us</h2>
-              <p class="lead">Address : <span style="color: rgb(81, 79, 79);">752 N. State Street #172, Westerville, Ohio,
-                  43082, US</span></p>
-              <p class="lead">Email : <span style="color: rgb(81, 79, 79);">sales@cybersecurity.com</span></p>
-              <p class="lead">Phone : <span style="color: rgb(81, 79, 79);">+1-800-390-1053</span></p>
-              <p class="lead">Business hours : <span style="color: rgb(81, 79, 79);">24 Hours / 7 Days</span></p>
-    
-            </div>
-          </div>
-          <hr>
-      <p class="text-muted text-center">Copyright @2023 Cyber Security Services. All Rights Reserved.</p>
+            <hr>
+            <p class="text-muted text-center">Copyright @2023 Cyber Security Services. All Rights Reserved.</p>
         </div>
-      </footer>
+    </footer>
+
+    <script src="../xmlHttp/navbar.js"></script>
+    <script src="../xmlHttp/footer.js"></script>
+
 </body>
 
 </html>

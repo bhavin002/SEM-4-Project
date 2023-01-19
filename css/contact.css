@@ -119,6 +119,10 @@ select:focus {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+#fnameError,#lnameError,#emailError,#cnameError{
+    display: none;
+}
+
 
 
 @media (max-width:450px) {
