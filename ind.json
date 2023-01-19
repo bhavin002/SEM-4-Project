@@ -1,21 +1,21 @@
 [
     {
-        "image":"/images/ind1.png",
+        "image":"images/ind1.png",
         "title":"HealthCare",
         "desc":"Medical device security is a critical component within information assurance programs at hospitals worldwide. We work with facilities to ensure HITECH/HIPAA security programs meet the challenges industry"
     },
     {
-        "image":"/images/ind2.png",
+        "image":"images/ind2.png",
         "title":"Higher Education",
         "desc":"e work in tandem with higher education facilities to meet their cybersecurity management and policy challenges, ensuring clients remain in compliance with privacy regulations including FERPA, FACTA, GLBA, and HIPAA."
     },
     {
-        "image":"/images/ind3.png",
+        "image":"images/ind3.png",
         "title":"Banking",
         "desc":"We’re trusted by leading financial institutions that are required to meet FFIEC guidelines for information assurance and cybersecurity management, offering everything from penetration testing."
     },
     {
-        "image":"/images/ind4.png",
+        "image":"images/ind4.png",
         "title":"Software",
         "desc":"We provide cyber security services to protect Software as a Service (SaaS) solutions, safeguarding shared-service organizations from ongoing threats while elevating confidence for customers relying on those vendors to protect their data."
     }
