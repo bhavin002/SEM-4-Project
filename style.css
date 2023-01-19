@@ -23,7 +23,8 @@ header {
 .contant {
     position: absolute;
     top: 15%;
-    right: 10%;
+    right: 46%;
+
 }
 
 .contant2 {
@@ -95,8 +96,6 @@ header {
     font-weight: bolder;
 }
 
-
-
 .boxing {
     position: absolute;
     top: 15%;
@@ -142,15 +141,80 @@ footer {
     font-size: 35px;
     color: white;
 }
-.contant_index {
+
+.contact-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 9px;
+    width: 22rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+.contact-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: all .3s ease-in-out;
+}
+
+input,
+textarea,
+select {
+    width: 100%;border: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input_box {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.form {
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#fnameError,#lnameError,#emailError,#cnameError{
+    display: none;
+}
+
+.support-line{
+    border-radius: 9px;
+    background-color: #383b3d;
+    padding: 10px 0px 0.02px 30px;
+    box-shadow: white 0px 2px 8px 0px;
+    cursor: pointer;
+}
+.support-line:hover{
+    background-color: #ef0a34;
+    transition: all .4s ease-out;
+}
+
+.bg3{
+    width: 100%;
+}
+
+.contant_index{
     position: absolute;
     right: 28%;
-
+    top: 0%;
 }
 
 
 
+
 @media (max-width:850px) {
+
+    .contant_index{
+        position: absolute;
+        left: 8%;
+        top: 5%;
+    }
 
     .bg {
         height: 24rem;
@@ -159,12 +223,6 @@ footer {
 
     .main_hading {
         font-size: 30px;
-    }
-
-    .contant {
-        position: absolute;
-        top: 5%;
-        left: 8%;
     }
 
     .mobile_card {
@@ -220,4 +278,22 @@ footer {
     .mobile_none{
         display: none;
     }
+    .bg3{
+        width: 99.8%;
+    }
+    .contant {
+        position: absolute;
+        top: 30%;
+        right: 28%;
+    }
+    .mobile_none{
+        display: none;
+    }
+    .lead {
+        font-size: 16px;
+    }
+    .main_hading {
+        font-size: 25px;
+    }
+    
 }
