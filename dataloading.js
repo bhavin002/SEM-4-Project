@@ -35,7 +35,7 @@ function cardsValue(i) {
       </div>`
 }
 
-function NavVaules() { // aa call kya thay che?
+function NavVaules() { 
     return `
       <div class="col-md-12">
       <nav class="navbar navbar-expand-lg">
@@ -67,8 +67,6 @@ function NavVaules() { // aa call kya thay che?
       </nav>
     </div>`
 
-    // kai khabar nathi padati ka ela su che 😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆
-    //shanti rakh
 }
 
 function fooValues() {
