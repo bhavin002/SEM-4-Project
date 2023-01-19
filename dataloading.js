@@ -3,7 +3,7 @@ if (window.XMLHttpRequest) {
 } else {
     xmlhttp = new ActiveXObject();
 }
-xmlhttp.open("GET", "./ser.xml", false)
+xmlhttp.open("GET", "ser.xml", false)
 xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
 
