@@ -1,10 +1,13 @@
 $(document).ready(function () {
 
-    NavBar = document.getElementById("navBars");
-    NavBar.innerHTML = NavVaules();
+  $("#navBars").append(NavVaules());
+  $("#footers").append(fooValues());
 
-    Footer = document.getElementById("footers");
-    Footer.innerHTML = fooValues();
+    // NavBar = document.getElementById("");
+    // NavBar.innerHTML = NavVaules();
+
+    // Footer = document.getElementById("footers");
+    // Footer.innerHTML = fooValues();
 })
 
 if (window.XMLHttpRequest) {
@@ -35,7 +38,7 @@ function cardsValue(i) {
       </div>`
 }
 
-function NavVaules() { 
+function NavVaules() { // aa call kya thay che?
     return `
       <div class="col-md-12">
       <nav class="navbar navbar-expand-lg">
@@ -66,7 +69,6 @@ function NavVaules() {
         </div>
       </nav>
     </div>`
-
 }
 
 function fooValues() {
