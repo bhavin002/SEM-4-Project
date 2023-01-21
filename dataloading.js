@@ -1,13 +1,6 @@
 $(document).ready(function () {
-
   $("#navBars").append(NavVaules());
   $("#footers").append(fooValues());
-
-    // NavBar = document.getElementById("");
-    // NavBar.innerHTML = NavVaules();
-
-    // Footer = document.getElementById("footers");
-    // Footer.innerHTML = fooValues();
 })
 
 if (window.XMLHttpRequest) {
@@ -38,7 +31,7 @@ function cardsValue(i) {
       </div>`
 }
 
-function NavVaules() { // aa call kya thay che?
+function NavVaules() {
     return `
       <div class="col-md-12">
       <nav class="navbar navbar-expand-lg">
