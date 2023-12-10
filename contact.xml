@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<contact>
+    <cards>
+        <card>
+            <img>./images/calnder.png</img>
+            <title>Schedule Meeting Now</title>
+            <desc>Meet With a Cybersecurity consultant</desc>
+        </card>
+        <card>
+            <img>./images/call.png</img>
+            <title>Phone Number</title>
+            <desc>+1-800-390-1053</desc>
+        </card>
+        <card>
+            <img>./images/mail.png</img>
+            <title>Mail Address</title>
+            <desc>sales@cybersecurity.com</desc>
+        </card>
+    </cards>
+</contact>
